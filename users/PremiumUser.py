@@ -1,1 +1,4 @@
-# Your PremiumUser class goes here
+from users.User import Users
+
+class PremiumUser(Users):
+    pass
