@@ -18,5 +18,5 @@ class FreeUser(Users):
                 return f"""{self.fullname}:\n > {post}"""
         else:
             Users.all_posts.append([self.fullname, '**POST LIMIT REACHED**', f'{datetime.now().strftime("%m/%d/%Y")}', f'{datetime.now().strftime("%H:%M:%S")}'])
-            return f"\nYou have reached your post limit. Please upgrade to Premium to unlock unlimited posts."
+            return f"**{self.fullname} reached their post limit. Please upgrade to Premium to unlock unlimited posts.**"
     
